@@ -9,7 +9,7 @@ import android.graphics.RectF;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.support.v4.content.res.ResourcesCompat;
+import androidx.core.content.res.ResourcesCompat;
 import android.text.TextPaint;
 import android.text.TextUtils;
 import android.util.AttributeSet;

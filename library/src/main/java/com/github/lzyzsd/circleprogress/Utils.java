@@ -7,8 +7,8 @@ import android.graphics.Canvas;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.VectorDrawable;
-import android.support.graphics.drawable.VectorDrawableCompat;
-import android.support.v7.content.res.AppCompatResources;
+import androidx.vectordrawable.graphics.drawable.VectorDrawableCompat;
+import androidx.core.content.res.ResourcesCompat;
 
 /**
  * Created by bruce on 14-11-6.
@@ -34,7 +34,7 @@ public final class Utils
 
     public static Bitmap getBitmap(Context context, int drawableId)
     {
-        Drawable drawable = AppCompatResources.getDrawable(context, drawableId);
+        Drawable drawable = ResourcesCompat.getDrawable(context.getResources(), drawableId, null);
         return Utils.getBitmap(drawable);
     }
 
